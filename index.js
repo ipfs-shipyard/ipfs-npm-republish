@@ -5,6 +5,7 @@ var path = require('path');
 var os = require('os');
 var https = require('https');
 var { exec } = require('child_process');
+var mkdirp = require('mkdirp');
 
 var registry = 'https://registry.npmjs.org/'
 var localIPFSgateway = 'http://localhost:8080/'
@@ -72,6 +73,7 @@ function processDependency(key, value, cb) {
     var tarball = tmpDir+'/'+key+'-'+value.version+'.tgz'
 
     // download the tarball to ROOT
+    mkdirp.sync(path.dirname(tarball))
     downloadTarball(value.resolved, tarball, function() {
       // ipfs add tarball
       exec('ipfs add --quiet '+tarball, (err, stdout, stderr) => {
