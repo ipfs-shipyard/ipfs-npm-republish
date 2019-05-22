@@ -19,7 +19,7 @@ ipfs-npm-republish
 ```
 
 ## How it works
-
+```
 1. List dependencies for current directory from package-lock.json
 2. Calculate list of packages to be republished
 3. create an folder to act as ROOT
@@ -33,7 +33,7 @@ ipfs-npm-republish
 6. pin ROOT hash
 7. set per-project npm config to use new micro-registry
 8. output command to update registry to point to ipfs ROOT hash
-
+```
 ## TODOS
 
 - respect .npmrc for registry configs
