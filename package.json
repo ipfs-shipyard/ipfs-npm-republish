@@ -5,6 +5,5 @@
   "main": "index.js",
   "author": "Andrew Nesbitt",
   "license": "MIT",
-  "dependencies": {},
   "bin": "./index.js"
 }
