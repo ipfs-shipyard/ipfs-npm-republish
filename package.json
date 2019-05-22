@@ -5,8 +5,5 @@
   "main": "index.js",
   "author": "Andrew Nesbitt",
   "license": "MIT",
-  "bin": "./index.js",
-  "dependencies": {
-    "mkdirp": "^0.5.1"
-  }
+  "bin": "./index.js"
 }
