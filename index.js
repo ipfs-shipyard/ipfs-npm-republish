@@ -71,6 +71,14 @@ function processDependency(key, value, cb) {
   loadPackument(key, registry, function(packument) {
     var tarball = tmpDir+'/'+key+'-'+value.version+'.tgz'
 
+    const matchScoped = key.match(/^(@[^\/]+)\//)
+    if (matchScoped) {
+      const scopeDir = path.join(tmpDir, matchScoped[1])
+      if (!fs.existsSync(scopeDir)) {
+        fs.mkdirSync(scopeDir)
+      }
+    }
+
     // download the tarball to ROOT
     downloadTarball(value.resolved, tarball, function() {
       // ipfs add tarball
