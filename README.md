@@ -12,10 +12,22 @@ You also need IPFS running, I recommend installing [IPFS Desktop](https://github
 
 ## Usage
 
-From within a folder with a package-lock.json file run:
+To republish all the dependencies for your application, run the following command within folder with a package-lock.json present:
 
 ```shell
 ipfs-npm-republish
+```
+
+To republish a specific module from npm along with it's dependencies to ipfs, run the following command passing the name of the package:
+
+```shell
+ipfs-npm-republish react
+```
+
+adding a version string also works:
+
+```shell
+ipfs-npm-republish react@16.8.6
 ```
 
 ## How it works
@@ -42,7 +54,6 @@ ipfs-npm-republish
 - support git dependencies
 - check that IPFS is running locally
 - check that you have a package-lock.json
-- handle http as well as https urls
 - tests!
 
 ## Making it work offline
