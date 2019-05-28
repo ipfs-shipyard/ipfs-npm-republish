@@ -5,5 +5,8 @@
   "main": "index.js",
   "author": "Andrew Nesbitt",
   "license": "MIT",
-  "bin": "./index.js"
+  "bin": "./index.js",
+  "dependencies": {
+    "npm-remote-ls": "^1.3.2"
+  }
 }
