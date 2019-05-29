@@ -30,6 +30,12 @@ adding a version string also works:
 ipfs-npm-republish react@16.8.6
 ```
 
+You can also publish a new package directly to IPFS without needing to first publish to npmjs.org, run the following command within folder with a package.json present:
+
+```shell
+ipfs-npm-republish publish
+```
+
 ## How it works
 ```
 1. List dependencies for current directory from package-lock.json
