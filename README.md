@@ -48,7 +48,6 @@ ipfs-npm-republish publish
     2. ipfs add tarball
     3. rewrite the dist.tarball url to a local gateway url with tarball hash
 5. ipfs add -r ROOT
-6. pin ROOT hash
 7. set per-project npm config to use new micro-registry
 8. output command to update registry to point to ipfs ROOT hash
 ```
