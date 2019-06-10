@@ -69,7 +69,6 @@ ipfs-npm-republish publish bafybeiahqsziz6mxofxlvx3baqcrihjicxoh27mcg4eukwybvb2u
 
 ## Making it work offline
 
-- Use locally cached tarballs (`.npm/_cacache/content-v2` integrity hash split on `-` then base64 decoded to hex and sha512/12/34/56789...)
 - Use locally cached packuments (`.npm/_cacache/index-v5` which then points to `.npm/_cacache/content-v2`, not sure what the cache key for requests is yet)
 
 ## License
