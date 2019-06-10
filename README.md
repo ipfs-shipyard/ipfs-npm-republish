@@ -36,6 +36,12 @@ You can also publish a new package directly to IPFS without needing to first pub
 ipfs-npm-republish publish
 ```
 
+To publish a second release to an existing package that was published to IPFS, you can pass the hash of the previous version of the registry:
+
+```shell
+ipfs-npm-republish publish bafybeiahqsziz6mxofxlvx3baqcrihjicxoh27mcg4eukwybvb2u7whuzm
+```
+
 ## How it works
 ```
 1. List dependencies for current directory from package-lock.json
