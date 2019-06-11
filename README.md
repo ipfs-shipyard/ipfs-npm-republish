@@ -59,17 +59,12 @@ ipfs-npm-republish publish bafybeiahqsziz6mxofxlvx3baqcrihjicxoh27mcg4eukwybvb2u
 ```
 ## TODOS
 
-- respect .npmrc for registry configs
 - Publish ROOT to ipns (optional due to speed issues)
 - Don't upload private modules
 - support git dependencies
 - check that IPFS is running locally
 - check that you have a package-lock.json
 - tests!
-
-## Making it work offline
-
-- Use locally cached packuments (`.npm/_cacache/index-v5` which then points to `.npm/_cacache/content-v2`, not sure what the cache key for requests is yet)
 
 ## License
 
