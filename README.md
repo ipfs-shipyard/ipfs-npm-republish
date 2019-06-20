@@ -42,6 +42,12 @@ To publish a second release to an existing package that was published to IPFS, y
 ipfs-npm-republish publish bafybeiahqsziz6mxofxlvx3baqcrihjicxoh27mcg4eukwybvb2u7whuzm
 ```
 
+You can also merge two micro-registries together:
+
+```shell
+ipfs-npm-republish merge bafybeib7yv2z6bgmzphqjuexdb6smfah6pitmah4hzqb7rw7yjzmwocb6e bafybeic3ldukh6jfg2wq4fhrigtvgnf5lml6wo5qdkmsdlr3ieo63qczyu
+```
+
 ## How it works
 ```
 1. List dependencies for current directory from package-lock.json
