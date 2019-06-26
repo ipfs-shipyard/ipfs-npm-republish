@@ -16,6 +16,15 @@ if (args.length === 0){
   publish.publish(args[1], registry, localIPFSgateway)
 } else if (args[0] == 'merge') {
   merge.merge(args[1], args[2], localIPFSgateway)
+} else if (args[0] == 'help') {
+
+  var fs = require('fs')
+  var marked = require('marked');
+  var TerminalRenderer = require('marked-terminal');
+
+  marked.setOptions({renderer: new TerminalRenderer()});
+
+  console.log(marked(fs.readFileSync('README.md', 'utf8').split('## How it works')[0]))
 } else {
   republish.republishPackage(args[0], registry, localIPFSgateway)
 }
