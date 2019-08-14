@@ -6,6 +6,7 @@
   "author": "Andrew Nesbitt",
   "license": "MIT",
   "bin": "./index.js",
+  "repository": "https://github.com/andrew/ipfs-npm-republish",
   "dependencies": {
     "async": "^2.6.2",
     "deepmerge": "^3.2.1",
